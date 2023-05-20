@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+    <div class="intro">
+    <h1>PERCENTAGE CALCULATOR</h1>
+    </div>
+    <div class="container">
+    <div class="form-group">
+        <div class="input-item">
+            <span>what is <input type="number" id="percent"/>%</span>
+            <span>of <input type="number" id="percentage"/></span>
+            <button onclick="myResult()" >Calculate</button>
+            <!-- <input type="submit" value="Calculate" id="amount"/> -->
+            <p id="display"></p>
+        </div>
+    </div>
+    </div>
+    <script>
+        function myResult(){
+        let num1 = document.getElementById("percent").value;
+        let num2 = document.getElementById("percentage").value;
+        let result = num1*num2
+            return result
+         document.getElementById("display").innerHTML = result
+
+        // xy=3
+        // xyz=4
+        // tot=xy*xyz
+        // return tot
+    
+        }
+
+        console.log(myResult())
+
+
+
+    </script>
+</body>
+</html>
